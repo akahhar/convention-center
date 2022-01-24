@@ -474,4 +474,27 @@ ul.list-unstyled li span {
   .carousel-item img {
     min-height: 586px;
   }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -170px;
+  }
+  .section-title {
+    margin-bottom: 15px;
+  }
+  .section-title h2 {
+    font-size: 19px;
+  }
+  .footer-right ul li a img {
+    width: 135px;
+  }
+  .pricing.card {
+    padding-bottom: 0;
+  }
+  .pricing.card.pricing-table__item--hot {
+    margin-top: 0;
+    margin-bottom: 55px !important;
+  }
+  .toast {
+    width: 270px;
+  }
 }
