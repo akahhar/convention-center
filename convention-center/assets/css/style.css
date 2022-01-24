@@ -1,0 +1,477 @@
+/*
+
+  Theme Name: codeJar - Convention Center HTML5 Template
+
+  Author: Nayeem
+
+  Support: Nayeem@gmail.com
+
+  Description: Convention Center HTML5 Template
+
+  Version: 1.0
+
+*/
+
+/* 1. Theme default css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Manrope', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: #3e3e3e;
+  outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #0a0826;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.84px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 26px;
+  color: #231d4f;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #231d4f;
+  margin-bottom: 6px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #7e848c;
+  margin-bottom: 15px;
+}
+
+/* button style */
+
+.btn {
+  background-color: rgba(244, 150, 209, 0.1);
+  border-radius: 24px;
+  color: #3f87f5;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 15px 52px;
+  text-align: center;
+  text-transform: capitalize;
+  touch-action: manipulation;
+  transition: all 0.5s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+}
+
+/* .btn:hover {
+  background-color: #ffffff;
+  color: #3f87f5;
+} */
+.btn-slider {
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #3f87f5;
+  padding: 15px 36px;
+}
+/* .btn-slider:hover {
+  background-color: #f496d1;
+  color: #3f87f5;
+  opacity: 0.1;
+} */
+.pt-80 {
+  padding-top: 80px;
+}
+.pt-45 {
+  padding-top: 45px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-110 {
+  margin-bottom: 110px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+/* Header Styles */
+.logo {
+  font-size: 22px;
+  color: #3e3e3e;
+  font-weight: 700;
+}
+nav ul.main-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav ul.main-menu li a {
+  display: block;
+  padding: 30px 0px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Slider Styles */
+.carousel-caption {
+  padding: 0 170px;
+  /* margin-bottom: 40px; */
+}
+.carousel-caption p {
+  color: #fff;
+  padding: 0 100px;
+}
+/* Pricing */
+.pricing .card-body {
+  padding: 0.2rem 1rem;
+}
+.card-title {
+  margin-bottom: 20px;
+  color: #231d4f;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.pricing .card-body .card-text {
+  color: #848199;
+}
+.pricing .card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border: none;
+  background-color: transparent;
+}
+.pricing.card.pricing-table__item--hot {
+  position: relative;
+  border: none;
+  padding: 30px 10px 30px 5px;
+  margin-top: -30px;
+  background: #3f87f5;
+  box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+  border-radius: 26px;
+}
+.pricing.card {
+  border: none;
+  padding: 30px 10px 30px 5px;
+}
+ul.list-unstyled li {
+  margin-bottom: 5px;
+  color: #848199;
+}
+ul.list-unstyled li span {
+  background: rgba(82, 67, 194, 0.103693);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #5243c2;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+}
+.pricing.card.pricing-table__item--hot .card-title,
+.pricing.card.pricing-table__item--hot .card-header h4,
+.pricing.card.pricing-table__item--hot .card-body .card-text,
+.pricing.card.pricing-table__item--hot ul.list-unstyled li {
+  color: #ffffff;
+}
+.pricing.card.pricing-table__item--hot ul.list-unstyled li span {
+  color: #fff;
+  background-color: #5293f6;
+}
+.pricing.card.pricing-table__item--hot .btn {
+  background-color: #ffffff;
+}
+.pricing.card.pricing-table__item--hot:before {
+  position: absolute;
+  content: "Hot";
+  top: -10px;
+  right: 20px;
+  color: #fff;
+  width: 46px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.833333px;
+  background: #ff4e4e;
+  border-radius: 13.5px;
+}
+/* Offer styles */
+.title-decorate {
+  position: relative;
+  padding: 0 20px 40px 20px;
+}
+.title-decorate:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 145px;
+  height: 21px;
+  background: url("../images/title-image.png") no-repeat center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service-content {
+  transition: all 0.3s ease 0s;
+  box-shadow: rgb(0 0 0 / 8%) 0px 8px 20px;
+}
+.team-classic-caption h4 {
+  font-size: 22px;
+}
+.service-content:hover {
+  /* transform: scale(0.93); */
+  box-shadow: rgb(0 0 0 / 25%) 0px 8px 20px;
+}
+.team-classic-caption {
+  padding: 25px 25px 20px;
+}
+/* Toast */
+.toast.mytost {
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  z-index: 999999;
+}
+.toast-body p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.toast-body span {
+  color: #505050;
+}
+/* Accoradion FAq */
+.accordion-button {
+  font-size: 20px;
+  color: #383838;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: "Inter", sans-serif;
+  box-shadow: none !important;
+}
+/* .accordion-item {
+  margin-bottom: 13px;
+} */
+.accordion-item {
+  border-color: #d5e5fb;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #d5e5fb;
+}
+.accordion-button:not(.collapsed) {
+  color: initial;
+  background-color: transparent;
+}
+.accordion-body {
+  padding-top: 0;
+}
+.accordion-body p {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+/* Footer styles */
+.footer-right ul li:first-child {
+  color: #d9dbe1;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+/* Responsive styles */
+@media (min-width: 1500px) and (max-width: 1920px) {
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .carousel-caption {
+    padding: 0px;
+  }
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    padding: 0;
+  }
+  .carousel-caption p {
+    padding: 0;
+  }
+  nav ul.main-menu li {
+    margin-left: 10px;
+  }
+}
+/* small mobile :320px. */
+@media only screen and (max-width: 767px) {
+  .header-area {
+    padding: 35px 10px;
+  }
+  .logo {
+    font-size: 14px;
+  }
+  .carousel-caption p {
+    padding: 0;
+  }
+  .carousel-caption {
+    padding: 0;
+    margin-bottom: 38px !important;
+  }
+  .carousel-caption h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .btn-slider {
+    padding: 12px 26px;
+  }
+  .carousel-item img {
+    min-height: 586px;
+  }
+}
